@@ -3,138 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <title>Certificado de Viabilidade Técnica - ESTILONOSPES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Arial', sans-serif; 
-            line-height: 1.6; 
-            color: #333; 
-            max-width: 800px; 
-            margin: 0 auto; 
-            padding: 40px 20px; 
-            background: #f9f9f9;
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            color: #EAEAEA;
+            background: linear-gradient(135deg, #1a0f3e, #0a1a2e, #2d0a1a, #0a2d1a);
+            margin: 0;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-size: cover;
+        }
+        .container {
+            background: rgba(10, 10, 15, 0.85);
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 214, 10, 0.2);
         }
         .header {
             text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 2px solid #00D1FF;
-            padding-bottom: 20px;
+            margin-bottom: 32px;
+            position: relative;
         }
         .logo {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #00D1FF;
-            margin-bottom: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #00D1FF, #FFD60A);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-family: 'Montserrat';
+            color: #0A0A0F;
+            font-size: 24px;
+        }
+        .logo-text {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 28px;
+            background: linear-gradient(90deg, #00D1FF, #FFD60A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
         }
         .subtitle {
-            color: #555;
-            font-size: 1.1rem;
+            color: #B8B8C7;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        h1 {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 2.25rem;
+            margin: 24px 0 16px;
+            text-align: center;
+            color: #FFD60A;
+        }
+        .date {
+            color: #8A8A9A;
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 0.9375rem;
+        }
+        .marca {
+            font-family: 'Montserrat';
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: #00D1FF;
+            text-align: center;
+            margin: 16px 0;
         }
         .result-box {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 25px;
-            margin: 30px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: rgba(44, 44, 58, 0.6);
+            border: 1px solid rgba(0, 209, 255, 0.3);
+            border-radius: 10px;
+            padding: 24px;
+            margin: 32px 0;
         }
         .result-title {
-            font-size: 1.4rem;
+            font-family: 'Montserrat';
+            font-weight: 700;
             color: #00D1FF;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+            font-size: 1.25rem;
         }
         .result-content {
-            font-size: 1.1rem;
-            color: #444;
+            font-size: 1.0625rem;
+            color: #B8B8C7;
         }
         .warning {
-            background: #fff8e6;
+            background: rgba(255, 214, 10, 0.1);
             border-left: 4px solid #FFD60A;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 0 4px 4px 0;
+            padding: 20px;
+            margin: 28px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .warning p {
+            margin: 0;
+            font-size: 0.9375rem;
+            color: #B8B8C7;
+        }
+        .conclusao {
+            background: rgba(0, 209, 255, 0.05);
+            border-left: 4px solid #00D1FF;
+            padding: 20px;
+            margin: 28px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .conclusao p {
+            margin: 0;
+            font-size: 1.0625rem;
+            color: #EAEAEA;
         }
         .signature {
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px dashed #ddd;
+            padding-top: 24px;
+            border-top: 1px dashed rgba(255, 214, 10, 0.3);
         }
         .signature p {
-            margin: 8px 0;
-            font-size: 1.1rem;
+            margin: 10px 0;
+            font-size: 1.0625rem;
+            color: #B8B8C7;
         }
         .highlight {
             color: #00D1FF;
-            font-weight: 600;
+            font-weight: 700;
+            font-family: 'Montserrat';
         }
         .link-box {
             text-align: center;
-            margin-top: 30px;
-            padding: 20px;
-            background: #0A0A0F;
-            color: white;
-            border-radius: 10px;
+            margin: 40px 0;
+            padding: 32px;
+            background: rgba(10, 10, 15, 0.7);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 209, 255, 0.2);
+        }
+        .link-title {
+            color: #FFD60A;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            margin-bottom: 16px;
+            font-size: 1.25rem;
         }
         .link {
-            color: #FFD60A;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 600;
             display: inline-block;
-            margin-top: 10px;
+            background: linear-gradient(90deg, #00D1FF, #FFD60A);
+            color: #0A0A0F;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+            text-decoration: none;
+            transition: transform 0.3s ease;
         }
         .link:hover {
-            text-decoration: underline;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 209, 255, 0.4);
         }
         .footer {
             text-align: center;
-            margin-top: 30px;
-            color: #777;
-            font-size: 0.9rem;
+            margin-top: 40px;
+            color: #8A8A9A;
+            font-size: 0.875rem;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 214, 10, 0.1);
+        }
+        @media (max-width: 600px) {
+            .container { padding: 24px; }
+            h1 { font-size: 1.875rem; }
+            .logo-text { font-size: 24px; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="logo">SIDMARKTING®</div>
-        <div class="subtitle">Procuradoria Privada | Registro de Marcas INPI</div>
-    </div>
-
-    <h2>Certificado de Viabilidade Técnica</h2>
-    <p><strong>Data:</strong> 26/05/2026</p>
-    <p><strong>Marca:</strong> <span class="highlight">ESTILONOSPES</span></p>
-
-    <div class="result-box">
-        <div class="result-title">Resultado da Busca no INPI (23/05/2026 às 22:02:08)</div>
-        <div class="result-content">
-            <p><strong>Marca:</strong> ESTILONOSPES</p>
-            <p>- Nenhum resultado foi encontrado para a sua pesquisa.</p>
-            <p>Para efetuar outra pesquisa, pressione o botão de VOLTAR.</p>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">G</div>
+                <div class="logo-text">SIDMARKTING®</div>
+            </div>
+            <div class="subtitle">Procuradoria Privada | Registro de Marcas INPI</div>
         </div>
-    </div>
 
-    <div class="warning">
-        <strong>AVISO:</strong> Depois de fazer uma busca no banco de dados do INPI, ainda que os resultados possam parecer satisfatórios, não se deve concluir que a marca poderá ser registrada. O INPI no momento do exame do pedido de registro realizará nova busca que será submetida ao exame técnico que decidirá a respeito da registrabilidade do sinal.
-    </div>
+        <h1>Certificado de Viabilidade Técnica</h1>
+        <p class="date">Data: 26/05/2026</p>
+        <p class="marca">Marca: <span class="highlight">ESTILONOSPES</span></p>
 
-    <p><strong>Conclusão:</strong> A marca <span class="highlight">ESTILONOSPES</span> está <span class="highlight">livre para protocolo</span> na classe 35 (serviços de consultoria, marketing e vendas), desde que respeitadas as regras de distintividade.</p>
+        <div class="result-box">
+            <div class="result-title">Resultado da Busca no INPI (23/05/2026 às 22:02:08)</div>
+            <div class="result-content">
+                <p><strong>Marca:</strong> ESTILONOSPES</p>
+                <p>– Nenhum resultado foi encontrado para a sua pesquisa.</p>
+                <p>Para efetuar outra pesquisa, pressione o botão de VOLTAR.</p>
+            </div>
+        </div>
 
-    <div class="signature">
-        <p><strong>Assinado digitalmente por:</strong></p>
-        <p><span class="highlight">Sidnei dos Santos</span></p>
-        <p>CPF: <span class="highlight">***718.48*-</span></p>
-        <p>Contato: <a href="mailto:sidnei.santos.marcketing@gmail.com" style="color:#00D1FF">sidnei.santos.marcketing@gmail.com</a></p>
-        <p><em>Este certificado é válido por 30 dias para fins de diagnóstico inicial.</em></p>
-    </div>
+        <div class="warning">
+            <p><strong>AVISO:</strong> Depois de fazer uma busca no banco de dados do INPI, ainda que os resultados possam parecer satisfatórios, não se deve concluir que a marca poderá ser registrada. O INPI no momento do exame do pedido de registro realizará nova busca que será submetida ao exame técnico que decidirá a respeito da registrabilidade do sinal.</p>
+        </div>
 
-    <div class="link-box">
-        <p>Acesse nossa página para iniciar o processo:</p>
-        <a href="https://sidmarkting-registro.vercel.app" class="link" target="_blank">https://sidmarkting-registro.vercel.app</a>
-        <p style="font-size: 0.9rem; margin-top: 10px; color: #B8B8C7">Clique no link acima para agendar seu diagnóstico gratuito</p>
-    </div>
+        <div class="conclusao">
+            <p><strong>Conclusão:</strong> A marca <span class="highlight">ESTILONOSPES</span> está <span class="highlight">livre para protocolo</span> na classe 35 (serviços de consultoria, marketing e vendas), desde que respeitadas as regras de distintividade.</p>
+        </div>
 
-    <div class="footer">
-        <p>Este documento tem caráter informativo e não substitui o exame técnico do INPI.</p>
-        <p>© 2026 Sidmarkting® - Procuradoria Privada | Todos os direitos reservados</p>
+        <div class="signature">
+            <p><strong>Assinado digitalmente por:</strong></p>
+            <p><span class="highlight">Sidnei dos Santos</span></p>
+            <p>CPF: <span class="highlight">***718.48*-</span></p>
+            <p>Contato: <a href="mailto:sidnei.santos.marcketing@gmail.com" style="color:#00D1FF; text-decoration:underline">sidnei.santos.marcketing@gmail.com</a></p>
+            <p><em>Este certificado é válido por 30 dias para fins de diagnóstico inicial.</em></p>
+        </div>
+
+        <div class="link-box">
+            <div class="link-title">Acesse nossa página para iniciar o processo:</div>
+            <a href="https://sidmarkting-registro.vercel.app" class="link" target="_blank">
+                https://sidmarkting-registro.vercel.app
+            </a>
+            <p style="margin-top: 16px; color:#B8B8C7; font-size: 0.9375rem;">
+                Clique no link acima para agendar seu diagnóstico gratuito
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>Este documento tem caráter informativo e não substitui o exame técnico do INPI.</p>
+            <p>© 2026 Sidmarkting® — Procuradoria Privada | Todos os direitos reservados</p>
+        </div>
     </div>
 </body>
 </html>
